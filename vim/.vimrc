@@ -30,10 +30,30 @@
 " place tag
 :noremap <Space><Space> a<++><Esc>
 
+" disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+" Enable highlight search
+:set hlsearch
+:set incsearch
+
+"case insensitive search unless change of case is detected
+:set ignorecase
+:set smartcase
+
 " C LANG MACROS
 
 " for loop
-:autocmd FileType c inoremap ;f for(;<Space><++>;<Space><++>){<++>}<Esc>T(i
+:autocmd FileType c inoremap ;f for<Space>(;<Space><++>;<Space><++>)<Space>{<++>}<Esc>T(i
 
 " conditional
-:autocmd FileType c inoremap ;c if(){<++>}<Esc>T(i
+:autocmd FileType c inoremap ;c if<Space>()<Space>{<++>}<Esc>T(i
+
+" include
+:autocmd FileType c inoremap ;i #include<Space><><Esc>T<i
+
+" comment
+:autocmd Filetype c inoremap ;m /*<Space><Space>*/<Esc>hhi
