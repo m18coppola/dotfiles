@@ -1,4 +1,3 @@
-" Theme
 colorscheme retrobox
 set background=dark
 set shm+=I
@@ -26,7 +25,6 @@ set switchbuf=useopen
 set wildmenu
 set wrap linebreak
 
-"skeletons
 autocmd BufNewFile *.sh 0r ~/.vim/skeletons/bash.sh
 autocmd BufNewFile *.py 0r ~/.vim/skeletons/python.py
 autocmd BufNewFile *.c  0r ~/.vim/skeletons/c.c

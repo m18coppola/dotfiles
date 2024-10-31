@@ -19,9 +19,7 @@ alias svba='source ./venv/bin/activate'
 
 # vim keybinds
 bindkey -v
-# replace vi-mode's redo key with readline reverse search
 bindkey '^r' history-incremental-search-backward
-# bind aichat autocomplete
 bindkey '\ee' _aichat_zsh
 
 # userspace python env
