@@ -1,0 +1,21 @@
+#!/bin/sh
+# snipper.sh - dinky screensnip utility
+
+SNIP_DIR=$HOME/Pictures/Snips
+
+curr_num=$(ls $SNIP_DIR |
+	grep -e 'snip[0-9]*\.png' |
+	sed 's/snip\([0-9]*\).png/\1/' |
+	sort -g |
+	tail -n 1)
+
+[ -z "$curr_num" ] && curr_num=0
+
+next_num=$(expr 1 + ${curr_num})
+
+output_path=$( zenity --entry \
+	--width 500 \
+	--title "snipper" \
+	--text "Enter path for image save location:" \
+	--entry-text "${SNIP_DIR}/snip${next_num}.png" ) &&
+	import "$output_path"

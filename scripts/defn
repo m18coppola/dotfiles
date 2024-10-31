@@ -4,4 +4,5 @@ if [ "$#" -lt 2 ]; then
 	echo "defn ALIAS_NAME COMMAND"
 	exit 1
 fi
+mkdir -p ~/.local/defn
 echo $2 > ~/.local/defn/$1 && chmod +rx ~/.local/defn/$1
