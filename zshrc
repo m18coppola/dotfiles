@@ -22,6 +22,10 @@ bindkey -v
 bindkey '^r' history-incremental-search-backward
 bindkey '\ee' _aichat_zsh
 
+if [ -f $HOME/.zshrc_local ]; then
+	source $HOME/.zshrc_local
+fi
+
 # userspace python env
 if [ -d "$USER_PYVENV" ]; then
 	. $USER_PYVENV/bin/activate
