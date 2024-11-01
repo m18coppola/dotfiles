@@ -23,7 +23,7 @@ bindkey '^r' history-incremental-search-backward
 bindkey '\ee' _aichat_zsh
 
 # userspace python env
-if [ -f USER_PYVENV ]; then
+if [ -d "$USER_PYVENV" ]; then
 	. $USER_PYVENV/bin/activate
 	export PS1="$_OLD_VIRTUAL_PS1"
 fi
