@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(git colorize zsh-syntax-highlighting)
+plugins=(git svn colorize zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vim
