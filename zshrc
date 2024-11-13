@@ -1,12 +1,12 @@
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(git svn colorize zsh-syntax-highlighting)
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 DISABLE_MAGIC_FUNCTIONS="true"
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vim
 export GIT_LFS_SKIP_SMUDGE=1
 export PATH="$HOME/.local/defn:$HOME/.local/bin:$PATH"
-export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
 PROMPT="; "
 RPROMPT="%~"
