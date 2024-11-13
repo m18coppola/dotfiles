@@ -96,3 +96,5 @@ endfunction
 
 command LlamaLocal call SwitchLlamaServer('http://127.0.0.1:8012/infill')
 command LlamaRemote call SwitchLlamaServer($LLAMA_CODE_API_URL .. '/infill')
+
+silent! source $HOME/.vim/vimrc_local
