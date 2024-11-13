@@ -1,5 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(git svn colorize zsh-syntax-highlighting)
+DISABLE_MAGIC_FUNCTIONS="true"
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vim
@@ -11,7 +12,6 @@ PROMPT="; "
 RPROMPT="%~"
 PS2="| "
 
-DISABLE_MAGIC_FUNCTIONS="true"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 setopt nobanghist
 
