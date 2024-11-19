@@ -3,7 +3,7 @@ set background=dark
 set shm+=I
 
 packadd! termdebug
-let g:termdebug_wide = 1
+let g:termdebug_config = { 'wide': 1 }
 
 filetype plugin indent on
 syntax on
