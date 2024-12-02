@@ -24,6 +24,7 @@ set splitright
 set switchbuf=useopen
 set wildmenu
 set wrap linebreak
+set nowrapscan
 
 autocmd BufNewFile *.sh 0r ~/.vim/skeletons/bash.sh
 autocmd BufNewFile *.py 0r ~/.vim/skeletons/python.py
